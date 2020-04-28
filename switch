@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{int x;
+printf("Enter no.");
+scanf("%d",&x);
+switch(x)
+{case 1: printf("Item:Pizza \n Price:Rs.120");
+break;
+
+case 2: printf("Item:Taco \n Price:Rs. 200");
+break;
+
+case 3: printf("Item:Pasta \n Price:Rs.150  ");
+break;
+
+case 4: printf("Item:Burger \n Price:Rs.100" );
+break;
+
+case 5: printf("Item:Wrap \n Price:Rs.120");
+break;
+
+default:printf("No option selected");
+}
+return 0;
+}
