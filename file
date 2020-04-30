@@ -1,0 +1,17 @@
+#include <stdio.h>
+ main( ){
+ 
+  FILE  *fs, *ft ; 
+  char  ch ; 
+  fs = fopen ( "fresh.txt", "r" ) ; 
+  ft = fopen ( "copy.txt", "w" ) ;
+   
+  while ( 1 ) 
+  {   ch = fgetc ( fs ) ; 
+ 
+  if ( ch == EOF )    break ; 
+    else    fputc ( ch, ft ) ;  } 
+ 
+ fclose ( fs ) ; 
+ fclose ( ft ) ;
+}
