@@ -1,0 +1,66 @@
+#include<declaration.h>
+#include<welcome.h>
+#include<menu.h>
+#include<newscoresheet.h>
+#include<stdio.h>
+#include<dos.h>
+#include<windows.h>
+#include<winbase.h>
+#include<conio.h>
+#include<time.h>
+#include<string.h>
+
+void welcome()
+{
+}
+
+void menu()
+{printf("\n\tmenu:\t\n");
+printf("\n\t1.New Scoresheet:\n");
+printf("\n\t2.View Scoresheer:\n");
+printf("\n\t3.Exit\n");
+}
+
+
+void date();
+void print();
+void filewrite();
+void fileread();
+void fileopen(char);
+void limitinput(int);
+void newscoresheet()
+
+
+int main()
+{
+int a,key;
+int b;
+char lastinput;
+FILE *fnew;
+while(TRUE)
+{welcome();
+system("cls");
+menu();
+ch=getch();
+
+
+char ch;	
+switch(ch)	
+{case'1';
+fileopen(ch);
+
+case'2';
+fileopen(ch);
+getch();
+
+case'3';
+fileopen(ch);
+system("cls");
+
+case'4';
+fileopen(ch);
+exit(0);}
+
+
+	}	
+}
